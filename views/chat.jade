@@ -1,0 +1,28 @@
+!!!
+html
+    head
+        title= title
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name='author', content='Sean Lai')
+        link(rel='stylesheet', href='/stylesheets/chat.css')
+        link(rel='stylesheet', href='/lib/bootstrap/css/bootstrap.css')
+        script(src='/javascripts/chat.js')
+        script(src='/socket.io/socket.io.js')
+        script(src='/javascripts/jquery-2.0.2.js')
+    body
+      div.container
+        div.row
+          div.span12
+            div.hero-unit
+              h1.text-center Taylor House Chat
+        div.row
+          div.span7.offset3
+            input.span6#name(type='text', placeholder='Name')
+            hr.invis
+        div.row
+          div.span6.offset3
+            div#content.chatbox
+        div.row
+          div.span7.offset3.form-horizontal
+            input.span6#field(type='text', placeholder='What do you want to say?')
+            button.btn#send(type='button') Send

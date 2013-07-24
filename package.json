@@ -1,0 +1,21 @@
+{
+  "name": "builtbysean.com",
+  "version": "0.0.1-8",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "socket.io": "latest",
+    "express": "3.3.4",
+    "jade": "*"
+  },
+  "subdomain": "builtbysean",
+  "domains": [
+    "builtbysean.com",
+    "www.builtbysean.com"
+  ],
+  "engines": {
+    "node": "0.8.x"
+  }
+}

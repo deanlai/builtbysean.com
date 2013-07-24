@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  div.spacer-main
+  div.hero-unit
+    h1.text-center Things I make and do.
+    p.lead.text-center Visit the thumbnails to see my work.
+  div.container
+    ul.thumbnails
+      li.span4
+        a.thumbnail(href='/work#crane')
+          img(src='/images/crane.jpg')
+      li.span4
+        a.thumbnail(href='/work#shinto')
+          img(src='/images/shinto2.jpg')
+      li.span4
+        a.thumbnail(href='/work#lostcoast')
+          img(src='images/LC-texture1.jpg')

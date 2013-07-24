@@ -1,0 +1,54 @@
+extends layout
+
+block content
+  hr.spacer-main
+  div.row
+    div.span12
+      div.row
+        div.span4
+          img.img-polaroid(src='images/portrait.jpg')
+        div.span7.offset1
+          hr.invis
+          p.lead I am Sean Lai
+          h1 Maker, designer, and doer <br/> of all manner of things
+          hr
+          p Lover of subtle detail, refined technique, and a perfect omelette.
+          p An American, with a B.S. in physics, based in Portland, Oregon.
+  hr.invis
+  hr.spacer-main
+  div.row
+    div.span12
+      div.row
+         div.span3.text-right
+            h2 This is home*
+            p.lead.muted *Everything is temporary<br> except entropy
+          div.span8.offset1
+            ul.thumbnails
+              li.span4
+                a.thumbnail(href='#hood', data-toggle='modal')
+                  img(src='/images/hood.jpg')
+              li.span4
+                a.thumbnail(href='#PDXdusk', data-toggle='modal')
+                  img(src='/images/PDXdusk.jpg')
+              li.span4
+                a.thumbnail(href='#room1', data-toggle='modal')
+                  img(src='images/room1.jpg')
+              li.span4
+                a.thumbnail(href='#room2', data-toggle='modal')
+                  img(src='images/room2.jpg')
+              div#hood.modal.hide.fade(tabindex='-1', role='dialog', aria-hideen='false', keyboard='true')
+                div.modal-body
+                    img(src='/images/hood.jpg', data-dismiss='modal')
+              div#PDXdusk.modal.hide.fade(tabindex='-1', role='dialog', aria-hideen='false', keyboard='true')
+                div.modal-body
+                    img(src='/images/PDXdusk.jpg', data-dismiss='modal')
+              div#room1.modal.hide.fade(tabindex='-1', role='dialog', aria-hideen='false', keyboard='true')
+                div.modal-body
+                    img(src='/images/room1.jpg', data-dismiss='modal')
+              div#room2.modal.hide.fade(tabindex='-1', role='dialog', aria-hideen='false', keyboard='true')
+                div.modal-body
+                    img(src='/images/room2.jpg', data-dismiss='modal')
+  hr.invis
+  hr.spacer-main
+    
+
