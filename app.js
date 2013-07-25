@@ -5,6 +5,8 @@
 
 var express = require('express')
   , routes = require('./routes')
+  , taylorhouse = require('./routes/taylorhouse')
+  , minisites = require('./routes/minisites')
   , http = require('http')
   , path = require('path')
   , socketio = require('socket.io');
@@ -37,7 +39,9 @@ app.get('/', routes.index);
 app.get('/work', routes.work);
 app.get('/about', routes.about);
 app.get('/contact', routes.contact);
-app.get('/taylorhousechat', routes.taylorhousechat);
+app.get('/minisites', minisites.index);
+app.get('/taylorhouse', taylorhouse.index);
+app.get('/taylorhouse/chat', taylorhouse.chat);
 
 var server = app.listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
