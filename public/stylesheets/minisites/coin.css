@@ -21,9 +21,10 @@ body{
     background-color: #036564;
     text-align: center;
     color: #E8DDCB;
-    padding: 10px;
+    padding: 5px;
     font-family: Chunkfive;
-    font-size: 24px
+    font-size: 40px;
+    letter-spacing: 3px;
 }
 
 .button {
@@ -35,9 +36,9 @@ body{
     background-color: #E8DDCB;
     text-align: center;
     color: #031634;
-    padding: 10px;
+    padding: 5px;
     font-family: Chunkfive;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .button:hover {
