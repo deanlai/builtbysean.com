@@ -40,6 +40,7 @@ app.get('/work', routes.work);
 app.get('/about', routes.about);
 app.get('/contact', routes.contact);
 app.get('/minisites', minisites.index);
+app.get('/minisites/coin', minisites.coin);
 app.get('/taylorhouse', taylorhouse.index);
 app.get('/taylorhouse/chat', taylorhouse.chat);
 

@@ -1,0 +1,54 @@
+body{
+    background-color: #031634;
+}
+.container {
+    margin: auto;
+    width: 960px;
+}
+
+.title {
+    margin-top: 100px;
+    font-size: 48px;
+    color: #E8DDCB;
+    font-family: Chunkfive;
+    text-align: center;
+}
+
+.coin-flip {
+    margin: auto;
+    width: 540px;
+    border-radius: 20px;
+    background-color: #036564;
+    text-align: center;
+    color: #E8DDCB;
+    padding: 10px;
+    font-family: Chunkfive;
+    font-size: 24px
+}
+
+.button {
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 360px;
+    border-radius: 20px;
+    background-color: #E8DDCB;
+    text-align: center;
+    color: #031634;
+    padding: 10px;
+    font-family: Chunkfive;
+    font-size: 24px;
+}
+
+.button:hover {
+    background-color: #CDB380;
+}
+@font-face {
+    font-family: 'Chunkfive';
+    src: url('./fonts/Chunkfive-webfont.eot#') format('eot'),
+         url('./fonts/Chunkfive-webfont.woff') format('woff'),
+         url('./fonts/Chunkfive-webfont.ttf') format('truetype'),
+         url('./fonts/Chunkfive-webfont.svg#webfontM8M0EYs2') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,16 @@
+!!! 5
+html
+  head
+    title= title
+    meta(name='author', content='Sean Lai')
+    link(rel='stylesheet', href='/stylesheets/minisites/coin.css')
+    script(src='/javascripts/minisites/coin.js')
+  body
+    div.container
+      div.title
+        h1 Flip a coin!
+      div.coin-flip
+        p#coin Decision time.
+      div.button#button(type="button", onclick="flipCoin()")
+        p Flip!
+
