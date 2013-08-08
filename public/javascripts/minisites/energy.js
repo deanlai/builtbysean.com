@@ -16,7 +16,7 @@ var conversions = {
         "battery": 194400,
         "food": 8368000,
         "nuclear": 86750000000,
-        "cyclist": 144000
+        "cyclist": 756000
 };
 
 function calculateEnergy(value, energyType) {
