@@ -26,10 +26,13 @@ function calculateEnergy(value, energyType) {
 function calculateEntities(energy, energyType) {
     return energyType === "nuclear" ? parseFloat(energy / conversions[energyType]).toFixed(8) : parseFloat(energy / conversions[energyType]).toFixed(3);
 }
-
+function keyPress(e, value, energyType) {
+    if (e.keyCode == 13) {
+        outputEnergies(value, energyType);
+        return false;
+    }
+}
 function outputEnergies(value, energyType) {
-    console.log(value);
-    console.log('test');
     energy = calculateEnergy(value, energyType);
     document.getElementById("butter").value = calculateEntities(energy, "butter");
     document.getElementById("water").value = calculateEntities(energy, "water");

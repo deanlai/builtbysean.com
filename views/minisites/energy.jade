@@ -15,42 +15,49 @@ html
                 h3 Energy contained in
                 form
                     input#butter(type="text", placeholder="Grams of butter", name="butter", value="",
-                    onblur="outputEnergies(this.value ,this.name)")
+                    onblur="outputEnergies(this.value, this.name)", onkeypress="return keyPress(event, this.value, this.name)",
+                    autocomplete="off")
                 h3 grams of butter
             div.energybox
                 h3 Energy needed to boil
                 form
                     input#water(type="text", placeholder="Litres of water", name="water",
-                    onblur="outputEnergies(this.value ,this.name)")
+                    onblur="outputEnergies(this.value ,this.name)", onkeypress="return keyPress(event, this.value, this.name)",
+                    autocomplete="off")
                 h3 litres of water from room temperature
             div.energybox
                 h3 Kinetic energy of
                 form
                     input#volkswagen(type="text", placeholder="Number of Volkswagens", name="volkswagen",
-                    onblur="outputEnergies(this.value ,this.name)")
+                    onblur="outputEnergies(this.value ,this.name)", onkeypress="return keyPress(event, this.value, this.name)",
+                    autocomplete="off")
                 h3 VW Beetles dropped from 2 meters
             div.energybox
                 h3 Energy contained in
                 form
                     input#battery(type="text", placeholder="Number of Macbook Airs", name="battery",
-                    onblur="outputEnergies(this.value ,this.name)")
+                    onblur="outputEnergies(this.value ,this.name)", onkeypress="return keyPress(event, this.value, this.name)",
+                    autocomplete="off")
                 h3 Macbook Air batteries
             div.energybox
                 h3 Energy of
                 form
                     input#food(type="text", placeholder="Number of intakes", name="food",
-                    onblur="outputEnergies(this.value ,this.name)")
+                    onblur="outputEnergies(this.value ,this.name)", onkeypress="return keyPress(event, this.value, this.name)",
+                    autocomplete="off")
                 h3 2000 Calorie recommended daily food intakes
             div.energybox
                 h3 Energy of
                 form
                     input#nuclear(type="text", placeholder="Grams of Uranium-235", name="nuclear",
-                    onblur="outputEnergies(this.value ,this.name)")
+                    onblur="outputEnergies(this.value ,this.name)", onkeypress="return keyPress(event, this.value, this.name)",
+                    autocomplete="off")
                 h3 grams of Uranium-235 undergoing nuclear fission
             div.energybox
                 h3 Energy of a strong amateur cyclist pedaling for
                 form
                     input#cyclist(type="text", placeholder="Hours of pedaling", name="cyclist",
-                    onblur="outputEnergies(this.value ,this.name)")
+                    onblur="outputEnergies(this.value ,this.name)", onkeypress="return keyPress(event, this.value, this.name)",
+                    autocomplete="off")
                 h3 hours
             div(style="clear:both")
