@@ -5,7 +5,7 @@ html
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(name='author', content='Sean Lai')
     meta(name='description', 
-        content='The Portfolio of Sean Lai, Portland OR. A collection of art/design projects, documentation of places been, and professional work by Sean Lai.')
+        content= description)
     meta(name='keywords', content='Origami, Automata, Design')
     link(rel='stylesheet', href='/lib/bootstrap/css/bootstrap.css')
   body
@@ -17,6 +17,8 @@ html
                         a(href='/') Home
                     li(class=path=='/work'?'active':undefined)
                         a(href='/work') Work
+                    li(class=path=='/about'?'active':undefined)
+                        a(href='/minisites') Minisites
                     li(class=path=='/about'?'active':undefined)
                         a(href='/about') About
                     li(class=path=='/contact'?'active':undefined)

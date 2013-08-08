@@ -1,31 +1,24 @@
-!!! 5
-html
-  head
-    title= title
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    meta(name='author', content='Sean Lai')
-    meta(name='description', 
-        content='Mini websites/webapps for experimentation and practice purposes. Portfolio of Sean Lai')
-    meta(name='keywords', content='HTML, CSS, JS, web experiments')
-    link(rel='stylesheet', href='/lib/bootstrap/css/bootstrap.css')
-  body
-    div.container
-      div.span12
-        div.hero-unit.text-center
-          h1 Mini sites n' such.
-          p.lead Web Development Experiments by Sean Lai
-      div.span6.offset3
-        table.table.table-bordered.table-hover
-          thead
-            tr
-              th.span2 Date
-              th.span4offset2 Minisite
-          tbody
-            tr
-              td.span2 25 July, 2013
-              td.span4offset2
-                a(href="/minisites/coin") Flip a coin!
-            tr
-              td.span2 7 August, 2013
-              td.span4offset2
-                a(href="/minisites/energy") Layman's Energies
+extends layout
+
+block content
+  div.spacer-main
+  div.container
+    div.span12
+      div.hero-unit.text-center
+        h1 Mini sites n' such.
+        p.lead Web Development Experiments by Sean Lai
+    div.span6.offset3
+      table.table.table-bordered.table-hover
+        thead
+          tr
+            th.span2 Date
+            th.span4offset2 Minisite
+        tbody
+          tr
+            td.span2 25 July, 2013
+            td.span4offset2
+              a(href="/minisites/coin") Flip a coin!
+          tr
+            td.span2 7 August, 2013
+            td.span4offset2
+              a(href="/minisites/energy") Layman's Energies
