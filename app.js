@@ -14,10 +14,10 @@ var express = require('express')
 var app = express();
 
 // all environments
+app.use(express.favicon(__dirname + '/public/favicon.ico'));
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
-app.use(express.favicon(__dirname + '/public/favicon.ico'));
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
@@ -41,6 +41,7 @@ app.get('/about', routes.about);
 app.get('/contact', routes.contact);
 app.get('/minisites', minisites.index);
 app.get('/minisites/coin', minisites.coin);
+app.get('/minisites/energy', minisites.energy);
 app.get('/taylorhouse', taylorhouse.index);
 app.get('/taylorhouse/chat', taylorhouse.chat);
 

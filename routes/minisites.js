@@ -7,3 +7,7 @@ exports.index = function(req, res){
 exports.coin = function(req, res){
     res.render('minisites/coin', { title: 'Flip a coin!', path: req.path});
 };
+
+exports.energy = function(req, res){
+    res.render('minisites/energy', { title: 'How much energy?', path: req.path});
+};
