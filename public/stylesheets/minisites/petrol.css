@@ -1,0 +1,37 @@
+body {
+    background-color: #24282B;
+    color: #FFF55F;
+    font-family: 'Inconsolata', mono;
+}
+
+h1.title {
+    margin-bottom: 1em;
+    text-align: center;
+    font-family: 'Patua One', cursive;
+}
+
+p.input {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+input {
+    width: 100%;
+}
+
+h3 {
+    height: 1em;
+}
+
+.result {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.resultbox {
+    margin-top: 2em;
+}
+
+.gold {
+    color: #FCA429;
+}

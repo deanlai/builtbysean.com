@@ -42,6 +42,7 @@ app.get('/contact', routes.contact);
 app.get('/minisites', minisites.index);
 app.get('/minisites/coin', minisites.coin);
 app.get('/minisites/energy', minisites.energy);
+app.get('/minisites/petrol', minisites.petrol);
 app.get('/taylorhouse', taylorhouse.index);
 app.get('/taylorhouse/chat', taylorhouse.chat);
 

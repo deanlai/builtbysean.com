@@ -20,3 +20,10 @@ exports.energy = function(req, res){
         description: 'A comparison of some common but often startlingly different energy quantities',
         path: req.path});
 };
+
+exports.petrol = function(req, res){
+    res.render('minisites/petrol', {
+        title: 'Petrol Pal',
+        description: 'A small tool to help calculate gas consumtion and divvy payment for road trips',
+        path: req.path});
+};

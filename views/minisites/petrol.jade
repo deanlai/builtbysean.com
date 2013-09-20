@@ -1,0 +1,38 @@
+!!! 5
+html(ng-app)
+  head
+    title= title
+    meta(name='author', content='Sean Lai')
+    meta(name='description', content= description)
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel='stylesheet', href='/lib/bootstrap/css/bootstrap.css')
+    link(rel="stylesheet", href="/lib/bootstrap/css/bootstrap-responsive.css")
+    link(rel='stylesheet', href='/stylesheets/minisites/petrol.css')
+    link(href="http://fonts.googleapis.com/css?family=Patua+One", rel="stylesheet", type="text/css")
+    link(href="http://fonts.googleapis.com/css?family=Inconsolata", rel="stylesheet", type="text/css")
+    script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js")
+    script(src='/javascripts/minisites/petrol.js')
+body
+  div.container(ng-controller="PetrolCtrl")
+    div.span4.offset4
+      div.row
+        h1.title Petrol Pal
+      div.row
+        input.fuel(type="number", ng-model="fuel", placeholder="How much fuel did you use?")
+        p.input.gold gallons
+      div.row
+        input.distance(type="number", ng-model="distance", placeholder="How far did you go?")
+        p.input.gold miles
+      div.row
+        input.cost(type="number", ng-model="cost", placeholder="How much money did it cost?")
+        p.input.gold dollars
+      div.row
+        input.persons(type="number", ng-model="persons", step="1", placeholder="How many people are paying?")
+        p.input.gold persons
+      div.row.resultbox
+        div.span2.result
+          h4.gold MPG: 
+          h3 {{distance / fuel | number: 2}}
+        div.span2.result
+          h4.gold Cost per person:
+          h3 {{cost / persons | currency}}
