@@ -18,11 +18,19 @@ body
       div.row
         h1.title Petrol Pal
       div.row
+        div.span2
+          input(type="radio", id="imperial", name="units", ng-model="units", ng-change="toggleImperial()", checked) 
+          label(for="imperial") Imperial
+        div.span2
+          input(type="radio", id="metric", name="units", ng-model="units", ng-change="toggleMetric()") 
+          label(for="metric") Metric
+        a
+      div.row
         input.fuel(type="number", ng-model="fuel", placeholder="How much fuel did you use?")
-        p.input.gold gallons
+        p.input.gold {{units.fuel}}
       div.row
         input.distance(type="number", ng-model="distance", placeholder="How far did you go?")
-        p.input.gold miles
+        p.input.gold {{units.distance}}
       div.row
         input.cost(type="number", ng-model="cost", placeholder="How much money did it cost?")
         p.input.gold dollars
@@ -31,7 +39,7 @@ body
         p.input.gold persons
       div.row.resultbox
         div.span2.result
-          h4.gold MPG: 
+          h4.gold {{units.economy}}: 
           h3 {{distance / fuel | number: 2}}
         div.span2.result
           h4.gold Cost per person:
